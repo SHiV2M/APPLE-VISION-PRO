@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLE VISION PRO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            flex: 1;
+        }
+        .basic-details {
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .heading-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .heading-section div {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .heading-section:nth-child(even) div:nth-child(odd),
+        .heading-section:nth-child(odd) div:nth-child(even) {
+            text-align: right;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media (max-width: 600px) {
+            .card {
+                margin: 10px 0;
+                padding: 10px;
+            }
+            .basic-details {
+                padding: 10px;
+            }
+            .heading-section div {
+                padding: 0 10px;
+            }
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Step 1: Image -->
+        <img src="image/Apple Vision Pro Design.png" alt="Session Image" class="fade-in">
+        
+        <!-- Step 2: Heading and Paragraph -->
+        <h1 class="fade-in">APPLE VISION PRO</h1>
+        <p class="fade-in">Apple Vision Pro is a cutting-edge augmented reality (AR) headset designed to merge the digital world with the real world. Here are some important specifications and features of the Apple Vision Pro:</p> 
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>1. Display:</h3>
+                <h5>Dual 4K Micro-OLED Displays:</h5>
+                <p>Provides an incredibly high resolution with over 23 million pixels, offering a highly immersive visual experience.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>2. Processor:</h3>
+                <h5>Apple M2 Chip:</h5>
+                <p>Ensures powerful performance, handling complex tasks and rendering high-quality graphics smoothly.</p>
+                <h5>R1 Chip:</h5>
+                <p>Dedicated to processing input from cameras, sensors, and microphones in real-time to minimize latency.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>3. Sensors:</h3>
+                <h5>12 Cameras:</h5>
+                <p>Includes outward-facing cameras for capturing the environment and inward-facing cameras for eye tracking.</p>
+                <h5>5 Sensors:</h5>
+                <p>Includes LIDAR for depth sensing and various other sensors for motion tracking.</p>
+                <h5>6 Microphones:</h5>
+                <p>Provides spatial audio and clear voice input.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>4. Tracking:</h3>
+                <h5>Eye Tracking:</h5>
+                <p>Uses advanced eye-tracking technology to enable intuitive control and interactions.</p>
+                <h5>Hand Tracking:</h5>
+                <p>Allows users to interact with the digital environment using natural hand gestures without needing external controllers.</p>
+            </div>
+        </div>
+
+        <!-- Horizontal Cards Section -->
+        <div class="cards-container fade-in">
+            <div class="card">
+                <img src="image/side view.jpeg" alt="">
+                <p>Apple Vision Pro comprises approximately 300 components.[40] It has a curved laminated glass display on the front, an aluminum frame on its sides, a flexible cushion on the inside, and a removable, adjustable headband. The frame contains five sensors, six microphones, and 12 cameras. </p>
+            </div>
+            <div class="card">
+                <img src="image/women.jpeg" alt="">
+                <p>Apple Vision Pro received mixed to positive reviews. Nilay Patel of The Verge praised the headset's design as being more premium and less "goofy"-looking than other existing VR headsets, felt that its displays were "generally incredible" in their sharpness and brightness, it had the highest-quality video passthrough he had seen on an MR headset yet (even while having a field of view narrower than the Meta Quest 3), and that its speakers had a "convincing" spatial audio effect.</p>
+            </div>
+            <div class="card">
+                <img src="image/man using vision pro.jpeg" alt="">
+                <p>Most reviews from buyers of Apple Vision Pro were also mixed to positive. While many users on Reddit seemed very satisfied with the device and entranced with the concept of a spatial computer, others lamented the small field of view or lack of common VR qualities.
+                    </p>
+            </div>
+            <div class="card">
+                <img src="image/led.jpeg" alt="">
+                <p>One person attempted to drive while using the device, which Apple warns against in the Apple Vision Pro user manual.[83] Other users posted videos of themselves using the device while walking, a feature not officially supported at launch.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>5. Audio:</h3>
+                <h5>Spatial Audio:</h5>
+                <p>Delivers immersive, surround sound experiences using the built-in speakers.</p>
+                <h5>Personalized Audio:</h5>
+                <p>Adapts audio output based on the user's ear shape and position.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>6. Design:</h3>
+                <h5>Lightweight and Comfortable:</h5>
+                <p>Designed to be worn comfortably for extended periods, with adjustable straps and custom-fit options.</p>
+                <h5>Modular Design:</h5>
+                <p>Components like the headband and light seal can be customized for a better fit.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>7. Battery Life:</h3>
+                <h5>External Battery Pack:</h5>
+                <p>Provides up to 2 hours of usage on a single charge.</p>
+                <h5>Direct Power:</h5>
+                <p>Can be used while plugged into a power source for extended sessions.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>8. Software:</h3>
+                <h5>visionOS:</h5>
+                <p>The operating system specifically designed for Vision Pro, offering a unique user interface optimized for AR experiences.</p>
+                <h5>App Support:</h5>
+                <p>Compatible with a range of applications, including productivity tools, entertainment apps, and immersive experiences.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>9. Connectivity:</h3>
+                <h5>Wi-Fi 6E:</h5>
+                <p>Ensures fast and reliable wireless connectivity.</p>
+                <h5>Bluetooth 5.3:</h5>
+                <p>For connecting accessories like keyboards, mice, and other peripherals.</p>
+            </div>
+        </div>
+
+        <div class="heading-section fade-in">
+            <div>
+                <h3>10. Privacy and Security:</h3>
+                <h5>Optic ID:</h5>
+                <p>A secure method for user authentication using iris scanning.</p>
+            </div>
+        </div>
+
+        <p class="fade-in">The Apple Vision Pro is designed to offer a seamless blend of digital and physical experiences, making it suitable for various applications, from productivity and creativity to entertainment and communication.</p>
+        
+        <!-- Step 3: Additional Cards with Heading and Content -->
+        <div class="cards-container fade-in">
+            <div class="card">
+                <img src="image/apple vision pro inside.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Fascinatingly though, Vision Pro's narrow field of view is actually the fault of the thickness of the light seal, otherwise known as the facial interface. You can technically wear Vision Pro without a light seal, though Apple doesn't recommend it and it hurts your nose too much to be practical. Without the light seal, Vision Pro's field of view feels just a few degrees narrower than Quest 3.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/apple vision side view.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">As for the actual battery life, I consistently got around the 2 hours advertised, though you can connect USB-C power to the battery for indefinite use, and this is how I spent the majority of my time in Vision Pro. Given this and the product’s seated focus, I find the popular complaints about battery life, mostly coming from those who don’t actually own the headset, to be overblown.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/apple-vision-pro-expanded.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Whatever your view on this, Apple chose the tethered battery approach, at least for its first-generation headset. And that means that every time you go to use Vision Pro you have to consciously think about how to best position this 353 gram anchor, around double the weight of a typical smartphone, and how to keep the cable out of the way of your left arm. And if you want to stand up or even just adjust your seating position, you better make sure the battery is in your pocket or held it in your hand.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/Apple_Debut_Vision_Pro_China_Year.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">I've snagged the cable. I've knocked the battery off my chair, uncomfortably tugging the headset. And I've leaned too far to the right and hit the tether's limit. The battery tether feels ever-present, and because it's so short it's much more annoying than the long tether of PC VR headsets or PlayStation VR2. I've picked up Quest 3 frequently in the past few days as a point of comparison to Vision Pro, and it's incredibly refreshing being able to just put the headset on your head and move however you like, no forethought required.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 4: Basic Details -->
+        <div class="basic-details fade-in">
+            <p>Contact us at: <br> <img src="image/gmail symbol.jpeg" width="15px">shivambahmaniya@gamil.com</p>
+            <p><img src="image/github img.jpeg" width="15px" alt=""> SHIV2M</p>
+            <p>© Copyright </p>
+        </div>
+    </div>
+</body>
+</html>
